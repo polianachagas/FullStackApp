@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import AddUser from '../users/AddUser'
 
 export default function Navbar() {
   return (
@@ -11,7 +13,7 @@ export default function Navbar() {
                 <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <button className='btn btn-outline-dark'>Add user</button>
+                <Link className='btn btn-outline-dark' to="/adduser">Add user</Link>
             </div>
         </nav>
 
